@@ -1,4 +1,0 @@
-anuki
-
-git clone mathaka thiyaganna
-
