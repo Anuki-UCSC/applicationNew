@@ -274,11 +274,13 @@ a.divtable{
     width: 70%;
     height: 170px;
     margin: 10px 10px 10px 30px;
-    border: 2px solid grey;
-    border-radius: 10px;
+    /*border: 2px solid grey;*/
+    /*border-radius: 10px;*/
     cursor: pointer;
     position: relative;/*no need*/
     margin-left: 100px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #e6e6e6;
 }
 
 .boardingPostTable tr th, .boardingPostTable tr td{
@@ -295,6 +297,26 @@ a.divtable{
 
 }
 
+/*
+.container{
+    margin-top: 30px;
+    margin-left:40px ;
+    min-height: 400px;
+  }
+  .item-wrap{
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0, 0, 0.5);
+    margin-bottom: 20px;
+    width: 60%;
+    padding: 30px;
+    background-color: #e6e6e6;
+  }
+  .cart-item{
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+*/
 .foodPostTable {
     width: 80%;
     height: 170px;

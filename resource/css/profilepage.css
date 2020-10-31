@@ -26,14 +26,16 @@ body {
 
 div.bg_profile{
   margin-top: 400;
-  margin-left: 700;
+  margin-left:700;
   background-color: #345234;
+  background-color: red;
 }
 
 
 .content_template{
-  margin-left:380px; 
+  margin-left:20%; 
   padding:20px;
+
 }
 
 .content_container{
@@ -52,9 +54,10 @@ div.bg_profile{
   background: rgba(255,255,255, 0.7);
   box-sizing:border-box;
   
+
 }
 .pro_inner{
-  margin-left: 150px;
+  margin-left: 25%;
 }
 
 div .title{
@@ -103,6 +106,7 @@ background: linear-gradient(148deg, rgba(9,9,121,0.4042553191489362) 0%, rgba(0,
   font-size: 18px;
   padding: 40px;
   font-family: "Roboto", sans-serif;
+  background-color: red;
 }
 
 .t_head{

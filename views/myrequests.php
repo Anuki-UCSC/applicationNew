@@ -9,10 +9,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My requests</title>
     <!-- <link rel="stylesheet" href="../resource/css/home.css">  -->
     <link rel="stylesheet" href="../resource/css/sidebar.css">
-    <link rel="stylesheet" href="../resource/css/mypayments.css">
+    <link rel="stylesheet" href="../resource/css/myrequests.css"> 
     <link rel="stylesheet" href="../resource/css/nav.css">
     <link rel="stylesheet" href="../resource/css/profilepage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -21,7 +21,7 @@
    
 </head>
 
-    <body>
+<body>
     	
     <div class="header">
             <div class="logo">
@@ -41,122 +41,69 @@
             </div>
         </div>
 
+<?php require 'sidebar.php'?> 
 
-<?php require "sidebar.php"?>
+ 
 
-
-<div class="bg_profile">
-	<div class="nav">
-		<div class="nav_topic">
-			
-		</div>
-	</div>
-</div>
-
-<div class="content_template">
+ <div class="content_template">
    <div class="content_container" >
- 
       <div class="new-order">
-        <h5>Confirm Tempory Request List</h5>
+        <h5>Accepted boarding Requests</h5>
       </div>
-        <div class="cont">
-          <div class="container">
-    
-
-<main role="main">
-
-      <section >
-        <div >
-            <?php
-         // print_r($_SESSION);
-           $student_email=$_SESSION['email'];
-       // echo   $BOid=$_SESSION['BOid'];
-       // echo "<br>".$_SESSION['Bid'];
-
-         
-
+        
           
     
-    //       $query="SELECT * FROM request WHERE isAccept=1 AND student_email='{$student_email}'";
-           
-       // $data=$connection->query($query);
-         $data=reg_userIshan::temBRequest($student_email,$connection);
-      
-
-
-       if ($data) {
-        $i=0;
-
-        while ($user=mysqli_fetch_assoc($data)) {
-          $i++;
-          ?>
-          <div class="item-wrap">
-                       <h3>Accepted Request:<?php echo $i?></h3>
-                    <div class="cart-item">
-                          <img src="<?php echo $user['image']; ?>" style="width:140px;height:150px;">
-                    <form action="../controller/ConDealBoarderIshan.php" method="post">
-
-                      
-                           <h4><b style="color: red">Congralulations!!</b> You Requested  <?php echo $user['city']; ?>         my boarding place.I liked to join you for new boarder.So I accepted your request please Confirm Request soon.</h4>
-
-                        
-                            <div class="btn1">
-                                 <input type="hidden" name='B_post_id' value="<?php echo $user['B_post_id']; ?>">
-                                <input type="hidden" name='student_email' value="<?php echo $user['student_email']; ?>">
-                              <!--  <input type="hidden" name='address' value="<?php// echo $address; ?>">
-                                <input type="hidden" name='email' value="<?php //echo $email; ?>">
-                                <input type="hidden" name='first_name' value="<?php //echo $first_name; ?>">
-                                <input type="hidden" name='last_name' value="<?php//echo $last_name; ?>"> -->
-                                <button class="btn5" name="accept" type="submit">Accept</button>
-                                <button class="btn2" name="remove" type="submit">cancel</button>
-                            </div>
-                        
+<!-- ******************************************************************** -->
+    <form action="../controller/orderAcptCon.php" method="post">
+            <div class="pro_inner">
+            <div class="item-wrap">
+              <div class="status">
+                  <h4>Accepted</h4>
+              </div>
+              <div class="Boardingplace">
+                  <h3>Boarding Place :     8/48,  Maharagama </h3>
+              </div>
+              <div class="cont">
+                     <div class="house_img">
+                      <!-- <img runat = 'server' src = '$boarding_post->image' /> -->
+                      <img src = '../resource/Images/h1.jpg' />
                     </div>
-                </div>
-            </form>
-                <?php
-                    }
-                }else{
-                    echo "No Pending Requests.";
-                }
-                //echo $user['date'];
-            ?>
+                    <div class="holder">
+                      <div class="innnerhold">
+                        <p>owner : Mr. Rohini Wickramanayaka <p>
+                        <p>date : 2020/10/3 <p>
+                        </div>
+                        <div class="but_pl">
+                          <button class="btn_1" name="accept" type="submit">Confirm  Renting<!-- <i class="fas fa-check"  style="font-size:60px;color:white;"></i> --></button>
+                          <button class="btn_2" name="remove" type="submit">Cancel</button>
 
-        
- 
-                  
-           
+                        </div>
+                    </div> 
+            </div>
 
 
-
-
-
-
+                        
             
-           
+            </div>
+            </div>
+     </form>  
+
+<!-- ******************************************************************** -->
           
-        </div>
-          
-      </section>
-
-    </main>
-
-</div>
-
-
-
-        
-
-
-
-
-        </div>
-      </div>
+       
     </div>
-  </div>
+</div> 
 
 
 
+</a>
+</div>
+</div>
+</div>
 </body>
 </html>
+        
+
+
+
 <?php $connection->close(); ?>

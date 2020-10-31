@@ -30,7 +30,10 @@ class BoardingPostController {
         foreach ($BoardingPostArray as $key => $boarding_post) 
         {
             $result = $result .
-                    "<a class='divtable' href='../views/BoardingPage.php?id=$boarding_post->B_post_id'>
+                    "
+                    <a class='divtable' href='../views/BoardingPage.php?id=$boarding_post->B_post_id'>
+
+
                     <table class = 'boardingPostTable'>
                         <tr>
                             <th rowspan='6' width = '150px' ><img runat = 'server' src = '$boarding_post->image' /></th>
