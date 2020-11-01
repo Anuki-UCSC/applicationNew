@@ -10,7 +10,7 @@
 	<div class="container">
 	<div class="para">
 			<h1><b>U</b>ser <b>R</b>egistration</h1>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga doloremque sunt nam ipsam nihil quo quidem asperiores quisquam pariatur expedita ducimus, voluptatem nisi, dignissimos recusandae. </p>
+			<p> Hey there!  Welcome to bodima platform. You are in the <b>most famous boarding Advertising and renting platform</b>. Congratulations for your journey with us!  </p>
 	</div>
 	<div class="register">
 	

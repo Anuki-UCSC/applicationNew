@@ -75,7 +75,7 @@
                     <?php  if($_SESSION['level']=="boardings_owner")
                     {
                        echo '<li class="side_element">
-                                <a href="#"><i class="fas fa-dollar-sign"></i><span>Post New Ads</span></a>
+                                <a href="postBoarding.php"><i class="fas fa-dollar-sign"></i><span>Post New Ads</span></a>
                               </li>';
 
                         echo '<li class="side_element">
@@ -101,7 +101,7 @@
                     <?php  if($_SESSION['level']=="food_supplier")
                     {
                        echo '<li class="side_element">
-                                <a href="#"><i class="fas fa-dollar-sign"></i><span>Post New Ads</span></a>
+                                <a href="foodPost.php"><i class="fas fa-dollar-sign"></i><span>Post New Ads</span></a>
                               </li>';
 
                         echo '<li class="side_element">
