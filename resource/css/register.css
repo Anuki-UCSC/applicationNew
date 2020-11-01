@@ -313,6 +313,14 @@ input[type="radio"]:checked+label::before {
    
 }
 
+/**********************newly added**************************/
+
+.emailerror{
+    color: red;
+    font-family: 'Arno Pro Subhead';
+    padding:10px;
+}
+
 
 
 
