@@ -29,7 +29,9 @@
         </div>
         <div class="details">
             <h1>Hi, I am Nimasha </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim recusandae ipsa repudiandae cupiditate, odio, modi earum id vitae maxime corrupti assumenda minus magni sit sequi pariatur ipsum doloribus? Optio.</p>
+            <p>I am an undergraduate of the University of Colombo School of Computing. I am a passionate individual.My interested areas are Web development, Research and developmnent and datamining. 
+
+                <br/><br/>I joined as a developer to this project. In my point of view, this project is a result of a broad research on university student's accomadation issues and related areas. This platform will be a great solution which address most of the issues faced by university students.  </p>
         </div>
         <div class="pic">
             <div class="picture">
