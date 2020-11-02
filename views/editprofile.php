@@ -62,39 +62,39 @@
               </div>
         </div>
         <div class="content">
-          <div class="user_type">
+          <div class="x">
             <div class="t_head">User type :</div>
             <div class="t_def_form">Food Supplier</div>
           </div>
 
-          <div class="first_name">
+          <div class="x">
             <div class="t_head">First Name :</div>
             <div class="t_def_form">
               <input type="text" id="fname" name="firstname" placeholder="Jessica"></div>
           </div>
 
-          <div class="last_name">
+          <div class="x">
             <div class="t_head">Last Name :</div>
             <div class="t_def_form">
                <input type="text" id="lname" name="lastname" placeholder="Wotson">
             </div>
           </div>
 
-          <div class="address">
+          <div class="x">
             <div class="t_head">Address :</div>
             <div class="t_def_form">
               <textarea id="subject" name="subject" placeholder="UCSC Building Complex, 35 Reid Ave, Colombo 00700" style="height:50px"></textarea>
             </div>
           </div>
 
-          <div class="email">
+          <div class="x">
             <div class="t_head">Email :</div>
             <div class="t_def_form">
               <input type="text" id="email" name="email" placeholder="jessi@gmail.com">
             </div>
           </div>
 
-          <div class="contact_number">
+          <div class="x">
             <div class="t_head">Contact Number :</div>
             <div class="t_def_form">
               <input type="text" id="contactno" name="contactno" placeholder="0773322110">

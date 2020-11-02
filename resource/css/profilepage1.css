@@ -57,8 +57,8 @@ div .content{
   font-size: 25px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-
 }
+
 .title{
   text-transform: uppercase;
   font-size: 30px;
@@ -79,7 +79,6 @@ div .content{
   font-weight: 700;
   float: left;
   width: 30%;
-
 }
 
 .t_def{
@@ -92,5 +91,36 @@ div .content{
 
 .x{
   padding:1%;
+}
+
+
+/******************edit profile page***********************/
+
+input[type=text], select, textarea {
+  width: 170%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  /* padding: 12px 20px; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div .back_button{
+   display: table-cell;
+   float: left;
+   padding-right: 5%;
 }
 
