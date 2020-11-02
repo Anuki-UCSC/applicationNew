@@ -5,11 +5,11 @@
      margin: 0px;
  }
 
-  .container{
+  /* .container{
     margin-top: 30px;
     margin-left:40px ;
     min-height: 400px;
-  }
+  } */
   .item-wrap{
     box-shadow: 0 4px 8px 0 rgba(0.4, 0, 0, 0.5);
     margin-bottom: 20px;
