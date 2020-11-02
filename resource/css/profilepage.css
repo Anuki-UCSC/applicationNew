@@ -20,8 +20,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: darken;
-
-  
 }
 
 div.bg_profile{
@@ -64,9 +62,8 @@ div .title{
   margin-right: 300px;
   padding:10px;
   text-align: center;
-  /*background-image: linear-gradient(to bottom right,#4970fc, #05f2b7);*/
-background: rgb(9,9,121);
-background: linear-gradient(148deg, rgba(9,9,121,0.7919621749408984) 0%, rgba(0,212,255,1) 100%);
+  background: rgb(9,9,121);
+  background: linear-gradient(148deg, rgba(9,9,121,0.7919621749408984) 0%, rgba(0,212,255,1) 100%);
 
 }
 
@@ -97,8 +94,6 @@ background: linear-gradient(148deg, rgba(9,9,121,0.4042553191489362) 0%, rgba(0,
   font-family: "Roboto", sans-serif;
   color:black;
   padding-left: 150px;
-
-  
 }
 
 .content{

@@ -10,7 +10,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../resource/css/home.css">  -->
     <link rel="stylesheet" href="../resource/css/sidebar.css">
-    <link rel="stylesheet" href="../resource/css/profilepage.css">
+    <link rel="stylesheet" href="../resource/css/profilepage1.css">
     <link rel="stylesheet" href="../resource/css/nav.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -46,48 +46,40 @@
 <?php require "sidebar.php"?>
 
 
-<div class="bg_profile">
-	<div class="nav">
-		<div class="nav_topic">
-			
-		</div>
-	</div>
-</div>
-
 <div class="content_template">
-<div class="content_container">
-  <div class="pro_inner">
+  <div class="content_container">
+    <div class="pro_inner">
         <div class="title">
           Jessica Wotson
 
         </div>
         <div class="content">
-          <div class="user_type">
+          <div class="x">
             <div class="t_head">User type :</div>
             <div class="t_def">Food Supplier</div>
           </div>
 
-          <div class="first_name">
+          <div class="x">
             <div class="t_head">First Name :</div>
             <div class="t_def">Jessica</div>
           </div>
 
-          <div class="last_name">
+          <div class="x">
             <div class="t_head">Last Name :</div>
             <div class="t_def">Wotson</div>
           </div>
 
-          <div class="address">
+          <div class="x">
             <div class="t_head">Address :</div>
             <div class="t_def">UCSC Building Complex, 35 Reid Ave, Colombo 00700</div>
           </div>
 
-          <div class="email">
+          <div class="x">
             <div class="t_head">Email :</div>
             <div class="t_def">jessi@gmail.com</div>
           </div>
 
-          <div class="contact_number">
+          <div class="x">
             <div class="t_head">Contact Number :</div>
             <div class="t_def">0773322110</div>
           </div>
@@ -95,6 +87,7 @@
       </div>
     </div>
   </div>
+</div>
 
 
 
