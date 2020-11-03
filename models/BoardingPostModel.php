@@ -101,6 +101,9 @@ class BoardingPostModel {
         return $boardingPostArray;
     }
 
+
+    public static function liveSearchPost($connection)
+
 }
 
 ?>

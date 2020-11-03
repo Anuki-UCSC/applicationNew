@@ -23,7 +23,7 @@
             <?php if(isset($_SESSION['email'])){echo  '<li class="nav_item" alt="Profile"><a href="../views/profilepage.php">
                     <i class="fa fa-bars" style="font-size: 1.5em; color: #E5E7E9;"></i></a></li>';} ?>
                 <li class=" nav_item "><a href="../index.php"><i class=" fa fa-home"></i>Home</a></li>
-                <li class="nav_item "><a href="boardings.php"><i class="fa fa-bed"></i> Boardings</a></li>
+                <li class="nav_item "><a href="boardings_live.php"><i class="fa fa-bed"></i> Boardings</a></li>
                 <?php if(isset($_SESSION['email']))
                 { 
                     if($_SESSION['level']=="food_supplier")
