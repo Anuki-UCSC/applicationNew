@@ -5,8 +5,6 @@ require '../controller/BoardingPostController.php';
 
 $BoardingPostController = new BoardingPostController();
 
-
-
 if(isset($_POST['categories']))
 {
     //Fill page with category of the selected type
@@ -18,13 +16,10 @@ else
     $BoardingPostTables = $BoardingPostController->CreateBoardingTables('%');
 }
 
-
-
 //Output page data
 $title = 'Boarding Posts';
 $content = $BoardingPostController->CreateCategoryDropdownList(). $BoardingPostTables;
 
 include 'Template.php';
-
 
 ?>

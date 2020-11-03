@@ -40,7 +40,7 @@
             <?php if(isset($_SESSION['email'])){echo  '<li class="nav_item" alt="Profile"><a href="views/profilepage.php">
                     <i class="fa fa-clone"></i>Profile</a></li>';} ?>
                 <li class=" nav_item "><a href="# "><i class=" fa fa-home"></i>Home</a></li>
-                <li class="nav_item "><a href="views/boardings_live.php"><i class="fa fa-bed"></i> Boardings</a></li>
+                <li class="nav_item "><a href="views/boardings.php"><i class="fa fa-bed"></i> Boardings</a></li>
                 <?php if(isset($_SESSION['email']))
                 { 
                     if($_SESSION['level']=="food_supplier")
@@ -69,7 +69,7 @@
                 <?php if(!isset($_SESSION['email'])) 
                     echo '<div class="btn1"> <a href="views/register.php"><i class="fa fa-user-plus"></i> Register</a></div>';
                 else
-                    echo '<div class="btn1"> <a href="views/boardings_live.php"><i class="fa fa-bed"></i> Search </a></div>';
+                    echo '<div class="btn1"> <a href="views/boardings.php"><i class="fa fa-bed"></i> Search </a></div>';
                      ?>
             </div>
             <div class="para2">
@@ -88,7 +88,7 @@
                 <?php if(!isset($_SESSION['email'])) 
                     echo '<div class="btn1"> <a href="views/register.php"><i class="fa fa-user-plus"></i> Register</a></div>';
                 else
-                    echo '<div class="btn1"> <a href="views/boardings_live.php"><i class="fa fa-buysellads"></i> Add post</a></div>';
+                    echo '<div class="btn1"> <a href="views/boardings.php"><i class="fa fa-buysellads"></i> Add post</a></div>';
                      ?>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 <?php if(!isset($_SESSION['email'])) 
                     echo '<div class="btn1"> <a href="views/register.php"><i class="fa fa-user-plus"></i> Register</a></div>';
                 else
-                    echo '<div class="btn1"> <a href="views/boardings_live.php"><i class="fa fa-buysellads"></i> Add post</a></div>';
+                    echo '<div class="btn1"> <a href="views/boardings.php"><i class="fa fa-buysellads"></i> Add post</a></div>';
                      ?>
             </div>
             <div class="para6">
