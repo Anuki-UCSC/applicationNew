@@ -102,7 +102,7 @@ class BoardingPostModel {
     }
 
 
-    public static function liveSearchPost($connection)
+    public static function liveSearchPost($connection,$query)
 
 }
 

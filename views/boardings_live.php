@@ -15,31 +15,38 @@
     <title>search boarding</title>
 </head>
 <body>
-    <?php include 'nav.php' ?>
-    <div class="live_container">
-        <div class="live_searchbar">
-            <span class="input-group-addon">Search</span>
-            <input type="text" name="search_text" id="search_text" 
-            placeholder="Search by any key word" class="form-control" />
-        </div>
-
-        <div id="result"></div>
+	<div class="whole">
+		<?php include 'nav.php' ?>
+		<!-- <div class="live_container"> -->
+			<div class="live_searchbar">
+				<span class="input-group-addon">Search</span>
+				<input type="text" name="search_text" id="search_text" 
+				placeholder="Search by any key word" class="form-control" />
+			</div>
 		
-		<!-- <div style="clear:both"></div> -->
-    </div>
-</body>
-</html>
+			<div class="outer_result_block">
+				<div id="result"></div>
+			
+			</div>
+			<div class="right_bar">
+				right bar
+			</div>
+			<!-- <div style="clear:both"></div> -->
+		<!-- </div> -->
+	</div>
+
+
 
 
 <script>
 $(document).ready(function(){
 	load_data();
-	function load_data(query)
+	function load_data(qry)
 	{
 		$.ajax({
 			url:"../controller/livesearch_control.php",
 			method:"post",
-			data:{query:query},
+			data:{qry:qry},
 			success:function(data)
 			{
 				$('#result').html(data);
@@ -51,7 +58,8 @@ $(document).ready(function(){
 		var search = $(this).val();
 		if(search != '')
 		{
-			load_data(search);
+			load_data(search).css({"backgroundColor":"black",
+        "color":"white"});
 		}
 		else
 		{
@@ -59,4 +67,13 @@ $(document).ready(function(){
 		}
 	});
 });
+
+
+$('th').css({"backgroundColor":"black",
+        "color":"white"});
 </script>
+
+
+</body>
+</html>
+ 
